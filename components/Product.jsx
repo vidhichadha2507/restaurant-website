@@ -1,14 +1,18 @@
-import React from 'react';
-import Link from 'next/link';
+import React from "react";
+import Link from "next/link";
 
-import { urlFor } from '../lib/client';
+import { urlFor } from "../lib/client";
+import { useState } from "react";
 
 const Product = ({ product: { image, name, slug, price } }) => {
+
+
   return (
     <div>
-      <Link href={`/product/${slug.current}`}>
+      {/* <Link href={`/product/${slug.current}`}> */}
+      <Link href={`/${name === "Main course" ?"MainCourse":name}`}>
         <div className="product-card">
-          <img 
+          <img
             src={urlFor(image && image[0])}
             width={250}
             height={250}
@@ -19,7 +23,7 @@ const Product = ({ product: { image, name, slug, price } }) => {
         </div>
       </Link>
     </div>
-  )
-}
+  );
+};
 
-export default Product
+export default Product;
