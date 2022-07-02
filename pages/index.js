@@ -9,6 +9,7 @@ const Home = ({ products, bannerData }) => (
     <div className="products-heading">
       <h2>MENU</h2>
       {/* <p>speaker There are many variations passages</p> */}
+      
     </div>
 
     <div className="products-container">

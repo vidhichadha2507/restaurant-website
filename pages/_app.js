@@ -6,6 +6,7 @@ import '../styles/globals.css';
 import { StateContext } from '../context/StateContext';
 
 function MyApp({ Component, pageProps }) {
+  
   return (
     <StateContext>
       <Layout>
@@ -13,6 +14,7 @@ function MyApp({ Component, pageProps }) {
         <Component {...pageProps} />
       </Layout>
     </StateContext>
+
   )
 }
 

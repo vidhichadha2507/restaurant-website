@@ -1,9 +1,12 @@
-import React from 'react';
-import Link from 'next/link';
+import React from 'react'
+import { client } from '../lib/client';
+import {Product} from '../components';
 
-import { urlFor } from '../lib/client';
 
-const Product = ({ product: { image, name, slug, price } }) => {
+
+
+
+const display = ({ product: { image, name, slug, price } }) => {
   return (
     <div>
       <Link href={`/product/${slug.current}`}>
@@ -21,5 +24,4 @@ const Product = ({ product: { image, name, slug, price } }) => {
     </div>
   )
 }
-
-export default Product
+export default display;

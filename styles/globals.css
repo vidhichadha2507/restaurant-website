@@ -36,7 +36,7 @@ width: 100%;
   font-size: 29px;
   font-weight: 600;
   margin: 60px 0px;
-  color: #f02d34;
+  color: #6b595a;
 }
 .marquee {
   position: relative;
@@ -65,13 +65,13 @@ width: 100%;
     margin-left: 6px;
 }
 .logo{
-  color: gray;
+  color: rgb(5, 5, 5);
   font-size: 18px;
 
 }
 .cart-icon{
   font-size: 25px;
-  color: gray;
+  color: rgb(0, 0, 0);
   cursor: pointer;
   position: relative;
   transition: transform .4s ease;
@@ -130,7 +130,7 @@ width: 100%;
 
 .hero-banner-container{
   padding: 100px 40px;
-  background-color: #aeaaaa;
+  background-color: #bef085;
   border-radius: 15px;
   position: relative;
   height: 500px;
@@ -161,7 +161,7 @@ width: 100%;
   padding-top: 2%;
 }
 .hero-banner-container h1{
-  color: white;
+  color: #F7F7EE;
   font-size: 5em;
   margin-left: -20px;
   text-transform: uppercase;
@@ -203,7 +203,7 @@ text-align: end;
 .products-heading{
   text-align: center;
   margin: 40px 0px;
- color: #324d67;
+ color: #FB7813;
 
 }
 .products-heading h2{
@@ -216,7 +216,7 @@ text-align: end;
 }
 .footer-banner-container{
   padding: 100px 40px;
-  background-color: #b2a6a6;
+  background-color: #e5741e;
   border-radius: 15px;
   position: relative;
   height: 400px;
@@ -327,7 +327,7 @@ text-align: end;
 }
 .cart-num-items{
   margin-left: 10px;
-  color: #f02d34;
+  color: #e15425;
 }
 .empty-cart{
   margin:40px;
@@ -411,7 +411,7 @@ padding: 30px 65px;
   margin-top: 10px;
   margin-top: 40px;
   text-transform: uppercase;
-  background-color: #f02d34;
+  background-color: #eb6c11;
   color: #fff;
   cursor: pointer;
     transform: scale(1, 1);
@@ -419,6 +419,9 @@ padding: 30px 65px;
 }
 .btn:hover{
   transform: scale(1.1,1.1);
+  box-shadow: #e5741e;
+  text-shadow: 2px 2px 5px rgb(2, 2, 2);;
+
 }
 .product-detail-container{
   display: flex;
@@ -456,10 +459,10 @@ padding: 30px 65px;
 }
 
 .selected-image{
-  background-color:#f02d34;
+  background-color:#ee5016;
 }
 .reviews{
-  color: #f02d34;
+  color: #ef5e1b;
   margin-top: 10px;
   display: flex;
   gap: 5px;
@@ -480,7 +483,7 @@ padding: 30px 65px;
   font-weight: 700 ;
   font-size: 26px;
   margin-top: 30px;
-  color:#f02d34;
+  color:#df5012;
 }
 .price .old-price, .product-price .old-price, .price .old-price{
   color: gray;
@@ -498,12 +501,12 @@ padding: 30px 65px;
 }
 .buttons .add-to-cart{
   padding: 10px 20px;
-  border: 1px solid #f02d34 ;
+  border: 1px solid #ec590a ;
   margin-top: 40px;
   font-size: 18px;
   font-weight: 500;
-  background-color: white;
-  color: #f02d34;
+  background-color:#F7F7F7;
+  color: #ec5119;
   cursor: pointer;
   width: 200px;
    transform: scale(1, 1);
@@ -516,7 +519,7 @@ padding: 30px 65px;
   width: 200px;
 
   padding: 10px 20px;
-  background-color: #f02d34;
+  background-color: #ed6111;
   color: white;
   border: none;
   margin-top: 40px;
