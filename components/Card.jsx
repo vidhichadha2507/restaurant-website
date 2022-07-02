@@ -9,7 +9,7 @@ const Card = ({ name, image, price, slug, type }) => {
   }
   console.log(name);
   return (
-    <Link href={`/product/${slug.current}`}>
+    <Link href={`/${type}/${slug.current}`}>
       <div className="cards">
         <div className="cards-header">
           <img
