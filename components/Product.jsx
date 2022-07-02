@@ -5,12 +5,11 @@ import { urlFor } from "../lib/client";
 import { useState } from "react";
 
 const Product = ({ product: { image, name, slug, price } }) => {
-
-
+  console.log(name);
   return (
     <div>
       {/* <Link href={`/product/${slug.current}`}> */}
-      <Link href={`/${name === "Main course" ?"MainCourse":name}`}>
+      <Link href={`/${name === "Main course" ? "MainCourse" : name}`}>
         <div className="product-card">
           <img
             src={urlFor(image && image[0])}

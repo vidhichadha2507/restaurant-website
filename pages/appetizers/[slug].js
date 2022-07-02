@@ -10,6 +10,8 @@ const ProductDetails = ({ product, products }) => {
 
 
 
+
+
   const { image, name, details, price } = product;
   const [index, setIndex] = useState(0);
   const { decQty, incQty, qty, onAdd, setShowCart } = useStateContext();
@@ -55,7 +57,7 @@ const ProductDetails = ({ product, products }) => {
           </div>
           <h4>Details: </h4>
           <p>{details}</p>
-          <p className="price">${price}</p>
+          <p className="price">₹{price}</p>
           <div className="quantity">
             <h3>Quantity:</h3>
             <p className="quantity-desc">
@@ -108,7 +110,7 @@ export const getStaticPaths = async () => {
 }
 
 
-export const getStaticProps = async ({ params: { slug } }) => {
+export const getStaticProps = async ({ params: { slug }, type }) => {
   let path;
   if (typeof window !== 'undefined') {
     path = localStorage.getItem('path')
@@ -117,8 +119,8 @@ export const getStaticProps = async ({ params: { slug } }) => {
   console.log(path);
 
 
-  const query = `*[_type =="breakfast" && slug.current == '${slug}'][0]`;
-  const productsQuery = `*[_type == "breakfast"]`
+  const query = `*[_type =="appetizers" && slug.current == '${slug}'][0]`;
+  const productsQuery = `*[_type == "appetizers"]`
 
   const product = await client.fetch(query);
   const products = await client.fetch(productsQuery);
