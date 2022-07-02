@@ -1,5 +1,6 @@
 import React from 'react'
 import { client, urlFor } from '../lib/client';
+import HeroBanner from '../components/HeroBanner'
 
 import Card from '../components/Card';
 import '../styles/card.module.css'
@@ -18,12 +19,16 @@ const Beverage = ({ beverageData }) => {
 
     console.log(beverageData[0]);
     return (
-        <div className='cards-area'>
-            <div className='cards-container'>
+        <div>
 
-                {beverageData.map((data) => (
-                    <Card name={data.name} price={data.price} image={data.image} slug={data.slug} type={data.type} />
-                ))}
+            {/* <HeroBanner /> */}
+            <div className='cards-area'>
+                <div className='cards-container'>
+
+                    {beverageData.map((data) => (
+                        <Card name={data.name} price={data.price} image={data.image} slug={data.slug} type={data.type} />
+                    ))}
+                </div>
             </div>
         </div>
     )

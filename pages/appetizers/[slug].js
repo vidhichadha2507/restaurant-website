@@ -3,6 +3,7 @@ import React, { useState } from 'react';
 import { AiOutlineMinus, AiOutlinePlus, AiFillStar, AiOutlineStar } from 'react-icons/ai';
 
 import { client, urlFor } from '../../lib/client';
+import ListProduct from '../../components/ListProduct'
 import { Product } from '../../components';
 import { useStateContext } from '../../context/StateContext';
 
@@ -78,7 +79,7 @@ const ProductDetails = ({ product, products }) => {
         <div className="marquee">
           <div className="maylike-products-container track">
             {products.map((item) => (
-              <Product key={item._id} product={item} />
+              <ListProduct key={item._id} product={item} />
             ))}
           </div>
         </div>
