@@ -22,9 +22,6 @@ const Card = ({ name, image, price, slug, type }) => {
         <div className="cards-body">
           <h4>{name}</h4>
           <p>{price}</p>
-          <a href="./Register.html">
-            <i className="fa-solid fa-arrow-right-long arrowHead" />
-          </a>
         </div>
       </div>
     </Link>

@@ -1,19 +1,8 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
-
-.header-container {
-  padding-top: 50px;
-  padding-left: 5%;
-  width: 100%;
-  height: 200px;
-  background-color: #f8f9fa;
-  text-align: center;
-}
-
 .cards-area {
   width: 100%;
   display: flex;
   justify-content: center;
-  /* background: #000; */
+  background: red;
 }
 
 .cards-container {
@@ -21,6 +10,7 @@
   width: 1200px;
   justify-content: center;
   flex-wrap: wrap;
+  background-color: red !important;
 }
 .cards {
   margin: 30px;
@@ -29,6 +19,7 @@
   box-shadow: 0 2px 20px rgba(0, 0, 0, 0.2);
   overflow: hidden;
   width: 320px;
+  background-color: red;
 }
 
 .cards-header {

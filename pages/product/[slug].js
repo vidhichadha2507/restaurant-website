@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { useRouter } from 'next/router';
+
 import { AiOutlineMinus, AiOutlinePlus, AiFillStar, AiOutlineStar } from 'react-icons/ai';
 
 import { client, urlFor } from '../../lib/client';
@@ -7,12 +7,7 @@ import { Product } from '../../components';
 import { useStateContext } from '../../context/StateContext';
 
 const ProductDetails = ({ product, products }) => {
-  const router = useRouter()
-  const path = router.asPath.substring(9)
-  if (typeof window !== 'undefined') {
-    localStorage.setItem('path', JSON.stringify(path))
-    // const item = localStorage.getItem('key')
-  }
+
 
 
   const { image, name, details, price } = product;
@@ -111,16 +106,16 @@ export const getStaticPaths = async () => {
     fallback: 'blocking'
   }
 }
-// const data = localStorage.getItem('path')
+
 
 export const getStaticProps = async ({ params: { slug } }) => {
   let path;
   if (typeof window !== 'undefined') {
     path = localStorage.getItem('path')
-    // const item = localStorage.getItem('key')
+
   }
   console.log(path);
-  // const path = localStorage.getItem('path')
+
 
   const query = `*[_type =="beverage" && slug.current == '${slug}'][0]`;
   const productsQuery = `*[_type == "beverage"]`
