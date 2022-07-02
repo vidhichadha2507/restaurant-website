@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { useRouter } from 'next/router';
 import { AiOutlineMinus, AiOutlinePlus, AiFillStar, AiOutlineStar } from 'react-icons/ai';
 
 import { client, urlFor } from '../../lib/client';
@@ -6,6 +7,14 @@ import { Product } from '../../components';
 import { useStateContext } from '../../context/StateContext';
 
 const ProductDetails = ({ product, products }) => {
+  const router = useRouter()
+  const path = router.asPath.substring(9)
+  if (typeof window !== 'undefined') {
+    localStorage.setItem('path', JSON.stringify(path))
+    // const item = localStorage.getItem('key')
+  }
+
+
   const { image, name, details, price } = product;
   const [index, setIndex] = useState(0);
   const { decQty, incQty, qty, onAdd, setShowCart } = useStateContext();
@@ -25,7 +34,7 @@ const ProductDetails = ({ product, products }) => {
           </div>
           <div className="small-images-container">
             {image?.map((item, i) => (
-              <img 
+              <img
                 key={i}
                 src={urlFor(item)}
                 className={i === index ? 'small-image selected-image' : 'small-image'}
@@ -68,14 +77,14 @@ const ProductDetails = ({ product, products }) => {
       </div>
 
       <div className="maylike-products-wrapper">
-          <h2>You may also like</h2>
-          <div className="marquee">
-            <div className="maylike-products-container track">
-              {products.map((item) => (
-                <Product key={item._id} product={item} />
-              ))}
-            </div>
+        <h2>You may also like</h2>
+        <div className="marquee">
+          <div className="maylike-products-container track">
+            {products.map((item) => (
+              <Product key={item._id} product={item} />
+            ))}
           </div>
+        </div>
       </div>
     </div>
   )
@@ -92,7 +101,7 @@ export const getStaticPaths = async () => {
   const products = await client.fetch(query);
 
   const paths = products.map((product) => ({
-    params: { 
+    params: {
       slug: product.slug.current
     }
   }));
@@ -102,11 +111,20 @@ export const getStaticPaths = async () => {
     fallback: 'blocking'
   }
 }
+// const data = localStorage.getItem('path')
 
-export const getStaticProps = async ({ params: { slug }}) => {
-  const query = `*[_type == "product" && slug.current == '${slug}'][0]`;
-  const productsQuery = '*[_type == "product"]'
-  
+export const getStaticProps = async ({ params: { slug } }) => {
+  let path;
+  if (typeof window !== 'undefined') {
+    path = localStorage.getItem('path')
+    // const item = localStorage.getItem('key')
+  }
+  console.log(path);
+  // const path = localStorage.getItem('path')
+
+  const query = `*[_type =="beverage" && slug.current == '${slug}'][0]`;
+  const productsQuery = `*[_type == "beverage"]`
+
   const product = await client.fetch(query);
   const products = await client.fetch(productsQuery);
 
