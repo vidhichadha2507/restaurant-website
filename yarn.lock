@@ -2139,6 +2139,11 @@
   "resolved" "https://registry.npmjs.org/react-is/-/react-is-16.13.1.tgz"
   "version" "16.13.1"
 
+"react-razorpay@^1.1.5":
+  "integrity" "sha512-jYDGW7k71qyANELOoa8JMgZjdGl1UiqqH/QbmkREl1q2nk7E+W8nyMdvD6ukXm/MPZJxTFoYljBFOJb8zydwTg=="
+  "resolved" "https://registry.npmjs.org/react-razorpay/-/react-razorpay-1.1.5.tgz"
+  "version" "1.1.5"
+
 "react-transition-group@^4.4.0":
   "integrity" "sha512-/RNYfRAMlZwDSr6z4zNKV6xu53/e2BuaBbGhbyYIXTrmgu/bGHzmqOs7mJSJBHy9Ud+ApHx3QjrkKSp1pxvlFg=="
   "resolved" "https://registry.npmjs.org/react-transition-group/-/react-transition-group-4.4.2.tgz"
