@@ -1,6 +1,7 @@
 import React from 'react'
 import { client, urlFor } from '../lib/client';
 import HeroBanner from '../components/HeroBanner'
+import { v4 as uuidv4 } from 'uuid';
 
 import Card from '../components/Card';
 import '../styles/card.module.css'
@@ -26,7 +27,7 @@ const Beverage = ({ beverageData }) => {
                 <div className='cards-container'>
 
                     {beverageData.map((data) => (
-                        <Card name={data.name} price={data.price} image={data.image} slug={data.slug} type={data.type} />
+                        <Card name={data.name} price={data.price} image={data.image} slug={data.slug} type={data.type} key={uuidv4()} />
                     ))}
                 </div>
             </div>

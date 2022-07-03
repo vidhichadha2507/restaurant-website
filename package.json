@@ -24,7 +24,8 @@
     "react-hot-toast": "^2.2.0",
     "react-icons": "^4.3.1",
     "react-razorpay": "^1.1.5",
-    "stripe": "^8.209.0"
+    "stripe": "^8.209.0",
+    "uuid": "^8.3.2"
   },
   "devDependencies": {
     "@babel/preset-react": "^7.16.7",

@@ -7,7 +7,7 @@ export default makeStyles((theme) => ({
     flexDirection: "column",
     alignItems: "center",
     padding: theme.spacing(2),
-    background: "url(../../assets/bg_custom.svg)",
+
   },
   root: {
     "& .MuiTextField-root": {
