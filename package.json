@@ -23,6 +23,7 @@
     "react-google-login": "^5.2.2",
     "react-hot-toast": "^2.2.0",
     "react-icons": "^4.3.1",
+    "react-razorpay": "^1.1.5",
     "stripe": "^8.209.0"
   },
   "devDependencies": {
