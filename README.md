@@ -1,3 +1,21 @@
+# restarurent-website
+
+A restarurent wessbite made using next.js.
+
+![restaurent-wesbite](https://imgur.com/z9XKca4.jpg)
+
+## Features
+
+### Shopping Cart
+
+![cart](https://imgur.com/UnlsLAx.jpg)
+![cart2](https://imgur.com/aGzhiNM.jpg)
+
+### Payment System via Stripe
+
+![stripe](https://imgur.com/Pj9L9NM.jpg)
+![payment-success](https://imgur.com/J1Gv1uf.jpg)
+
 # Contributing to restaurant-website
 
 Welcome! This is your initial step in making your contribution to my restaurent website. This will serve as a guide for making your contibutions to this project. Do not forget to read [Contributing.MD](https://github.com/vidhichadha2507/restaurant-website/blob/main/CONTRIBUTING.md).
