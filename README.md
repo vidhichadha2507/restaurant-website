@@ -1,8 +1,8 @@
-# restarurent-website
+# restaurant-website
 
-A restarurent wessbite made using next.js.
+A restaurant website made using next.js.
 
-![restaurent-wesbite](https://imgur.com/z9XKca4.jpg)
+![restaurant-wesbite](https://imgur.com/z9XKca4.jpg)
 
 ## Features
 
@@ -18,7 +18,7 @@ A restarurent wessbite made using next.js.
 
 # Contributing to restaurant-website
 
-Welcome! This is your initial step in making your contribution to my restaurent website. This will serve as a guide for making your contibutions to this project. Do not forget to read [Contributing.MD](https://github.com/vidhichadha2507/restaurant-website/blob/main/CONTRIBUTING.md).
+Welcome! This is your initial step in making your contribution to my restaurant website. This will serve as a guide for making your contributions to this project. Do not forget to read [Contributing.MD](https://github.com/vidhichadha2507/restaurant-website/blob/main/CONTRIBUTING.md).
 Please attach a screenshot of the final output of the work that you have done while making a PR. If you are working on an issue, please mention it as well.
 
 ## Creating an Issue
@@ -37,7 +37,7 @@ Please attach a screenshot of the final output of the work that you have done wh
 
 - **Step 5:** Submit the issue. 
 
-Yay! you just made added your first issue. The maintainers will now review your issue and assign it to you unless there is a problem with it.
+Yay! You just created your first issue. The maintainers will now review your issue and assign it to you unless there is a problem with it.
 
 
 ## Getting Started
@@ -74,23 +74,23 @@ Make a new branch. See below 👇
 git checkout -b "NewBranchName"
 ```
 
-You can now make your changes locally! Once you are done making all your changes, you can now push code and make a pull request. Checkout this [website](https://www.freecodecamp.org/news/writing-good-commit-messages-a-practical-guide/) to see how to write good commit messages.
+You can now make your changes locally! Once you are done making all your changes, you can now push the code and make a pull request. Checkout this [website](https://www.freecodecamp.org/news/writing-good-commit-messages-a-practical-guide/) to see how to write good commit messages.
 ```
 git commit -m "Commit Message"
 git push -u origin <YourBranchName>
 ```
 
-## Steps to making a pull request
+## Steps to make a pull request
 
-You can now update your branch from your local copy, and push it!.
+You can now update your branch from your local copy and push it!
 
 ![Imgur](https://imgur.com/mGJHc3J.jpg)
 
 
 # Code review process
 
-The maintainers of restaurant-website will look at Pull Requests and carry out merging of the requests.
+The maintainers of restaurant-website will look at pull requests and carry out merging of the requests.
 
 
-## Don't forgot to give a ⭐ to the repo, if you learned something!
+## Don't forget to give a ⭐ to the repo, if you learned something!
 
